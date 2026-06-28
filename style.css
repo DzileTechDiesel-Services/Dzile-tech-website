@@ -33,14 +33,26 @@ nav a{
 }
 
 .hero{
-    background:#1a1a1a;
+    background:
+        linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)),
+        url("https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    min-height:90vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
     text-align:center;
-    padding:100px 20px;
+
+    padding:40px;
 }
 
 .hero h1{
-    font-size:48px;
-    color:#f4b400;
+    font-size:60px;
+    color:#FFD700;
+    margin-bottom:20px;
 }
 
 .hero p{
@@ -98,4 +110,28 @@ font-size:16px;
 
 textarea{
 resize:vertical;
+}
+h2{
+    color:#FFD700;
+    margin-bottom:20px;
+}
+
+.card{
+    transition:0.3s;
+    border:1px solid #333;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border-color:#FFD700;
+    box-shadow:0 0 20px rgba(255,215,0,.3);
+}
+
+.btn:hover{
+    background:#FFD700;
+    transform:scale(1.05);
+}
+
+html{
+    scroll-behavior:smooth;
 }
