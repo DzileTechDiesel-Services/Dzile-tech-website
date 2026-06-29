@@ -135,3 +135,30 @@ h2{
 html{
     scroll-behavior:smooth;
 }
+header{
+    background:#000;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    border-bottom:3px solid #FFD700;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#FFD700;
+}
+
+.logo{
+    height:80px;
+}
